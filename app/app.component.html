@@ -1,6 +1,1607 @@
-|<a [routerLink]="['/home']">Home</a>|
-<a [routerLink]="['/contact']">Contact</a>|
-<a [routerLink]="['/clients']">Clients</a>|
-<a [routerLink]="['/login']">login</a>|
-<br />
-<router-outlet></router-outlet>
+
+<title>PolepalliMarriage</title>
+<body style="background: #f6f6f6">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 logo">
+				<img src="/assets/images/logo1.png" alt="polepalli-logo" />
+			</div>
+			<div class="col-md-6 inpt-lgn">
+
+
+				<form role="form" id="loginform1" name="loginform1" >
+					<label for="loginusername1" class="hidden-lable">email</label> <input type="email" class="user_name" placeholder="User Id/Mobile" name="username1" id="loginusername1" /> &nbsp; <label for="loginpassword1" class="hidden-lable">password</label> <input type="password" placeholder="Password" id="loginpassword1" class="user_password" name="password1" />
+					<button type="submit" class="btn btn-default home-page-btn sbmt-inpt" id="loginbutton1">SIGN
+						IN</button>
+
+					<div class="frgt-remb">
+						<div class="form-group checkbox remember-input">
+							<label class="chxboxlogin1"><input type="checkbox" id="rememberme1" name="remember-me" /> Remember me </label>
+						</div>
+						<div class="forgot-pass" data-toggle="modal" data-target="#myForgotPassword">
+							<a class="forgot" href="#">Forgot Password ?</a>
+						</div>
+					</div>
+
+				</form>
+
+				<div class="error_div">
+					<!-- <span id="validemail1" class="error-span" hidden="true">Please check the e-mail ID and Password</span> -->
+					<span id="verification1" class="error-span" hidden="true">Please
+						check the e-mail ID and Password</span> <span id="delete1" class="error-span" hidden="true"> Profile has been deleted</span>
+					<span id="anotherUser" class="error-span" hidden="true">
+						Other user logged in</span>
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+	<div class="container-fluid row-sec">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-6 first-prt">
+				<h4>TELUGU MATRIMONY</h4>
+				<p>The New Generation Matrimony Portal for the Telugu community.</p>
+
+				<h3>
+					Why Register with <u>PolepalliMarriage</u>
+				</h3>
+
+				<ul class="main-list">
+					<li>Lakhs of Tamil Brides &amp; Grooms</li>
+					<li>Verified Profiles</li>
+					<li>Secure &amp; Safe</li>
+					<li>Intelligent Compatibility Meter</li>
+					<li>Best-in-class, Built-in Search Engine</li>
+					<li>1000s of New Profiles for Top Telugu Communities</li>
+				</ul>
+
+				<p>
+					<span class="reg">Register FREE</span> to Find Your Life Partner
+				</p>
+				<h1 class="reg">Find lakhs of Telugu profiles of brides and
+					grooms. Register now and find your perfect match.</h1>
+			</div>
+			<div class=" col-md-4 sec-prt">
+				<h4>Register FREE</h4>
+				<form class="form-strt" role="form" id="registerForm" name="registerForm" method="post" action="http://www.kalyanmatrimony.com/campaign/telugu-matrimonials-matrimony/registerForm">
+					<div>
+						<input type="text" placeholder="Enter Your Name" class="form-control" data-toggle="tooltip" data-placement="bottom" autocomplete="off" title="Name required" id="username" name="username" /><input id="registrationsourceid" name="registrationsourceid" type="text" hidden="true" value="Campaign Register" /> <span id="samplespan" hidden="true"></span>
+						<input name="utmSource" type="text" hidden="true" value="" />
+
+					</div>
+
+					<div id="divprofilecreatedfor">
+						<select class="form-control" id="profilecreatedfor" name="profileForId" data-toggle="tooltip" data-placement="bottom" title="Profile Created required">
+							<option value="" class="hide">Profile Created For</option>
+							<option value="1">Myself</option>
+							<option value="2">Son</option>
+							<option value="3">Daughter</option>
+							<option value="4">Brother</option>
+							<option value="5">Sister</option>
+							<option value="6">Relative</option>
+							<option value="7">Friend</option>
+						</select>
+					</div>
+					<div id="divgender">
+						<select class="form-control" name="gender" id="gender" data-toggle="tooltip" data-placement="bottom" title="Gender required">
+							<option value="" class="hidden">Select Gender</option>
+							<option value="M">Male</option>
+							<option value="F">Female</option>
+						</select>
+					</div>
+
+						<div id="divmothertongue">
+						<select class="form-control profileMotherTongue" id="mothertongue" name="motherTongueId" data-toggle="tooltip" data-placement="bottom" title="Mother Tongue required">
+											<option value="" class="hide">Mother Tongue</option>
+										<option id="doUpdate" value="1">Angika</option>
+										<option id="doUpdate" value="2">Arunachali</option>
+										<option id="doUpdate" value="3">Assamese</option>
+										<option id="doUpdate" value="4">Awadhi</option>
+										<option id="doUpdate" value="5">Bengali</option>
+										<option id="doUpdate" value="6">Bhojpuri</option>
+										<option id="doUpdate" value="7">Brij</option>
+										<option id="doUpdate" value="8">Bihari</option>
+										<option id="doUpdate" value="9">Badaga</option>
+										<option id="doUpdate" value="10">Chatisgarhi</option>
+										<option id="doUpdate" value="11">Dogri</option>
+										<option id="doUpdate" value="12">English</option>
+										<option id="doUpdate" value="13">French</option>
+										<option id="doUpdate" value="14">Garhwali</option>
+										<option id="doUpdate" value="15">Garo</option>
+										<option id="doUpdate" value="16">Gujarati</option>
+										<option id="doUpdate" value="17">Haryanvi</option>
+										<option id="doUpdate" value="18">Himachali/Pahari</option>
+										<option id="doUpdate" value="19">Hindi</option>
+										<option id="doUpdate" value="20">Kanauji</option>
+										<option id="doUpdate" value="21">Kannada</option>
+										<option id="doUpdate" value="22">Kashmiri</option>
+										<option id="doUpdate" value="23">Khandesi</option>
+										<option id="doUpdate" value="24">Khasi</option>
+										<option id="doUpdate" value="25">Konkani</option>
+										<option id="doUpdate" value="26">Koshali</option>
+										<option id="doUpdate" value="27">Kumaoni</option>
+										<option id="doUpdate" value="28">Kutchi</option>
+										<option id="doUpdate" value="29">Lepcha</option>
+										<option id="doUpdate" value="30">Ladacki</option>
+										<option id="doUpdate" value="31">Magahi</option>
+										<option id="doUpdate" value="32">Maithili</option>
+										<option id="doUpdate" value="33">Malayalam</option>
+										<option id="doUpdate" value="34">Manipuri</option>
+										<option id="doUpdate" value="35">Marathi</option>
+										<option id="doUpdate" value="36">Marwari</option>
+										<option id="doUpdate" value="37">Miji</option>
+										<option id="doUpdate" value="38">Mizo</option>
+										<option id="doUpdate" value="39">Monpa</option>
+										<option id="doUpdate" value="40">Nicobarese</option>
+										<option id="doUpdate" value="41">Nepali</option>
+										<option id="doUpdate" value="42">Oriya</option>
+										<option id="doUpdate" value="43">Punjabi</option>
+										<option id="doUpdate" value="44">Rajasthani</option>
+										<option id="doUpdate" value="45">Sanskrit</option>
+										<option id="doUpdate" value="46">Santhali</option>
+										<option id="doUpdate" value="47">Sindhi</option>
+										<option id="doUpdate" value="48">Sourashtra</option>
+										<option id="doUpdate" value="49">Tamil</option>
+										<option id="doUpdate" value="50">Telugu</option>
+										<option id="doUpdate" value="51">Tripuri</option>
+										<option id="doUpdate" value="52">Tulu</option>
+										<option id="doUpdate" value="53">Urdu</option>
+										</select>
+					</div>
+					
+						<div class="form-group" id="divprofilecreatedfor">
+										
+											<select class="form-control profilereligion" name="religionId" id="religion" data-toggle="tooltip" data-placement="bottom" title="Religion required">
+
+													<option value="" class="hide">Select Religion</option>
+
+														<option value="1">Hindu</option>
+
+														<option value="2">Muslim - Shia</option>
+
+														<option value="3">Muslim - Sunni</option>
+
+														<option value="4">Muslim - Others</option>
+
+														<option value="5">Christian - Catholic</option>
+
+														<option value="6">Christian - Orthodox</option>
+
+														<option value="7">Christian - Protestant</option>
+
+														<option value="8">Christian - Others</option>
+
+														<option value="9">Sikh</option>
+
+														<option value="10">Jain - Digambar</option>
+
+														<option value="11">Jain - Shwetambar</option>
+
+														<option value="12">Jain - Others</option>
+
+														<option value="13">Parsi</option>
+
+														<option value="14">Buddhist</option>
+
+														<option value="15">Jewish</option>
+
+														<option value="16">Inter-Religion</option>
+
+														<option value="17">No Religious Belief</option>
+												</select>
+										
+									</div>
+									
+										<div class="form-group" id="divprofilecreatedfor">
+										
+											<select class="form-control" name="casteId" id="caste" data-toggle="tooltip" data-placement="bottom" title="Caste required">
+
+													<option value="" class="hide">Select Caste</option>
+													    
+                                                        <option value="1">Ad Dharmi</option>
+													    
+                                                        <option value="2">Adi Andhra</option>
+													    
+                                                        <option value="3">Adi Dravida</option>
+													    
+                                                        <option value="4">Adi KANNADA</option>
+													    
+                                                        <option value="5">Agarwal</option>
+													    
+                                                        <option value="6">Agnikula Kshatriya</option>
+													    
+                                                        <option value="7">Agri</option>
+													    
+                                                        <option value="8">Ahir Shimpi</option>
+													    
+                                                        <option value="9">Ahom</option>
+													    
+                                                        <option value="10">Ambalavasi</option>
+													    
+                                                        <option value="11">Arekatica</option>
+													    
+                                                        <option value="12">Arora</option>
+													    
+                                                        <option value="13">Arunthathiyar</option>
+													    
+                                                        <option value="14">Arya Vysya</option>
+													    
+                                                        <option value="15">Ayyaraka</option>
+													    
+                                                        <option value="16">Badaga</option>
+													    
+                                                        <option value="17">Bagdi</option>
+													    
+                                                        <option value="18">Baidya</option>
+													    
+                                                        <option value="19">Baishnab</option>
+													    
+                                                        <option value="20">Baishya</option>
+													    
+                                                        <option value="21">Bajantri</option>
+													    
+                                                        <option value="22">Balija</option>
+													    
+                                                        <option value="23">Banayat ORIYA</option>
+													    
+                                                        <option value="24">Banik</option>
+													    
+                                                        <option value="25">Baniya</option>
+													    
+                                                        <option value="26">Baniya - Bania</option>
+													    
+                                                        <option value="27">Baniya - Kumuti</option>
+													    
+                                                        <option value="28">Banjara</option>
+													    
+                                                        <option value="29">Barai</option>
+													    
+                                                        <option value="30">Bari</option>
+													    
+                                                        <option value="31">Baria</option>
+													    
+                                                        <option value="32">Barujibi</option>
+													    
+                                                        <option value="33">Besta</option>
+													    
+                                                        <option value="34">Bhandari</option>
+													    
+                                                        <option value="35">Bhatia</option>
+													    
+                                                        <option value="36">Bhatraju</option>
+													    
+                                                        <option value="37">Bhavasar Kshatriya</option>
+													    
+                                                        <option value="38">Bhoi</option>
+													    
+                                                        <option value="39">Bhovi</option>
+													    
+                                                        <option value="40">Bhoyar</option>
+													    
+                                                        <option value="41">Billava</option>
+													    
+                                                        <option value="42">Bishnoi/Vishnoi</option>
+													    
+                                                        <option value="43">Bondili</option>
+													    
+                                                        <option value="44">Boyar</option>
+													    
+                                                        <option value="45">Brahmbatt</option>
+													    
+                                                        <option value="46">Brahmin - Anavil</option>
+													    
+                                                        <option value="47">Brahmin - Audichya</option>
+													    
+                                                        <option value="48">Brahmin - Barendra</option>
+													    
+                                                        <option value="49">Brahmin - Bhatt</option>
+													    
+                                                        <option value="50">Brahmin - Bhumihar</option>
+													    
+                                                        <option value="51">Brahmin - Daivadnya</option>
+													    
+                                                        <option value="52">Brahmin - Danua</option>
+													    
+                                                        <option value="53">Brahmin - Deshastha</option>
+													    
+                                                        <option value="54">Brahmin - Dhiman</option>
+													    
+                                                        <option value="55">Brahmin - Dravida</option>
+													    
+                                                        <option value="56">Brahmin - GARHWALI</option>
+													    
+                                                        <option value="57">Brahmin - Gaur</option>
+													    
+                                                        <option value="58">Brahmin - Goswami/Gosavi</option>
+													    
+                                                        <option value="59">Brahmin - Gujar Gaur</option>
+													    
+                                                        <option value="60">Brahmin - Gurukkal</option>
+													    
+                                                        <option value="61">Brahmin - Halua</option>
+													    
+                                                        <option value="62">Brahmin - Havyaka</option>
+													    
+                                                        <option value="63">Brahmin - Hoysala</option>
+													    
+                                                        <option value="64">Brahmin - Iyengar</option>
+													    
+                                                        <option value="65">Brahmin - Iyer</option>
+													    
+                                                        <option value="66">Brahmin - Jangid</option>
+													    
+                                                        <option value="67">Brahmin - Jhadua</option>
+													    
+                                                        <option value="68">Brahmin - Jyotish</option>
+													    
+                                                        <option value="69">Brahmin - Kanyakubj</option>
+													    
+                                                        <option value="70">Brahmin - Karhade</option>
+													    
+                                                        <option value="71">Brahmin - Khandelwal</option>
+													    
+                                                        <option value="72">Brahmin - Kokanastha</option>
+													    
+                                                        <option value="73">Brahmin - Kota</option>
+													    
+                                                        <option value="74">Brahmin - Kulin</option>
+													    
+                                                        <option value="76">Brahmin - Kumaoni</option>
+													    
+                                                        <option value="77">Brahmin - Madhwa</option>
+													    
+                                                        <option value="78">Brahmin ? Maithil</option>
+													    
+                                                        <option value="79">Brahmin - Modh</option>
+													    
+                                                        <option value="80">Brahmin - Mohyal</option>
+													    
+                                                        <option value="81">Brahmin - Nagar</option>
+													    
+                                                        <option value="82">Brahmin - Namboodiri</option>
+													    
+                                                        <option value="83">Brahmin - Narmadiya</option>
+													    
+                                                        <option value="84">Brahmin - Narmadiya </option>
+													    
+                                                        <option value="85">Brahmin - Niyogi</option>
+													    
+                                                        <option value="86">Brahmin - Others</option>
+													    
+                                                        <option value="87">Brahmin - Paliwal</option>
+													    
+                                                        <option value="88">Brahmin - Panda</option>
+													    
+                                                        <option value="89">Brahmin - Pandit</option>
+													    
+                                                        <option value="90">Brahmin - Pareek</option>
+													    
+                                                        <option value="91">Brahmin - Pushkarna</option>
+													    
+                                                        <option value="92">Brahmin - Rarhi</option>
+													    
+                                                        <option value="93">Brahmin - Rigvedi</option>
+													    
+                                                        <option value="94">Brahmin - Rudraj</option>
+													    
+                                                        <option value="95">Brahmin - Sakaldwipi</option>
+													    
+                                                        <option value="96">Brahmin - Sanadya</option>
+													    
+                                                        <option value="97">Brahmin - Sanketi</option>
+													    
+                                                        <option value="98">Brahmin - Saraswat</option>
+													    
+                                                        <option value="99">Brahmin - Saryuparin</option>
+													    
+                                                        <option value="100">Brahmin - Shivhalli</option>
+													    
+                                                        <option value="101">Brahmin - Shrimali</option>
+													    
+                                                        <option value="102">Brahmin - Sikhwal</option>
+													    
+                                                        <option value="103">Brahmin - Smartha</option>
+													    
+                                                        <option value="104">Brahmin - Sri Vaishnava</option>
+													    
+                                                        <option value="105">Brahmin - Stanika</option>
+													    
+                                                        <option value="106">Brahmin - Tyagi</option>
+													    
+                                                        <option value="107">Brahmin - Vaidiki</option>
+													    
+                                                        <option value="108">Brahmin - Vaikhanasa</option>
+													    
+                                                        <option value="109">Brahmin - Velanadu</option>
+													    
+                                                        <option value="110">Brahmin - Vyas</option>
+													    
+                                                        <option value="111">Brajastha Maithil</option>
+													    
+                                                        <option value="112">Bunt (Shetty)</option>
+													    
+                                                        <option value="113">Chalawadi and Holeya</option>
+													    
+                                                        <option value="114">Chambhar</option>
+													    
+                                                        <option value="115">Chandravanshi Kahar</option>
+													    
+                                                        <option value="116">Chasa</option>
+													    
+                                                        <option value="117">Chattada Sri Vaishnava</option>
+													    
+                                                        <option value="118">Chattada Sri Vaishnava </option>
+													    
+                                                        <option value="119">Chaudary</option>
+													    
+                                                        <option value="120">Chaurasia</option>
+													    
+                                                        <option value="121">Chennadasar</option>
+													    
+                                                        <option value="122">Chettiar</option>
+													    
+                                                        <option value="123">Chhetri</option>
+													    
+                                                        <option value="124">Chippolu (Mera)</option>
+													    
+                                                        <option value="125">CKP</option>
+													    
+                                                        <option value="126">Coorgi</option>
+													    
+                                                        <option value="127">Devadiga</option>
+													    
+                                                        <option value="128">Devandra Kula Vellalar</option>
+													    
+                                                        <option value="129">Devang Koshthi</option>
+													    
+                                                        <option value="130">Devanga</option>
+													    
+                                                        <option value="131">Devar/Thevar/Mukkulathor</option>
+													    
+                                                        <option value="132">Devrukhe Brahmin</option>
+													    
+                                                        <option value="133">Dhangar</option>
+													    
+                                                        <option value="134">Dheevara</option>
+													    
+                                                        <option value="135">Dhiman</option>
+													    
+                                                        <option value="136">Dhoba</option>
+													    
+                                                        <option value="137">Dhobi</option>
+													    
+                                                        <option value="138">Dhor / Kakkayya</option>
+													    
+                                                        <option value="139">Dommala</option>
+													    
+                                                        <option value="140">Dumal</option>
+													    
+                                                        <option value="141">Dusadh (Paswan)</option>
+													    
+                                                        <option value="142">Ediga</option>
+													    
+                                                        <option value="143">Ezhava</option>
+													    
+                                                        <option value="144">Ezhuthachan</option>
+													    
+                                                        <option value="145">Gabit</option>
+													    
+                                                        <option value="146">Ganda</option>
+													    
+                                                        <option value="147">Gandla</option>
+													    
+                                                        <option value="148">Ganiga</option>
+													    
+                                                        <option value="149">Garhwali</option>
+													    
+                                                        <option value="150">Gatti</option>
+													    
+                                                        <option value="151">Gavara</option>
+													    
+                                                        <option value="152">Gawali</option>
+													    
+                                                        <option value="153">Ghisadi</option>
+													    
+                                                        <option value="154">Ghumar</option>
+													    
+                                                        <option value="155">Goala</option>
+													    
+                                                        <option value="156">Goan</option>
+													    
+                                                        <option value="157">Gomantak</option>
+													    
+                                                        <option value="158">Gondhali</option>
+													    
+                                                        <option value="159">Goud</option>
+													    
+                                                        <option value="160">Gounder</option>
+													    
+                                                        <option value="161">Gowda</option>
+													    
+                                                        <option value="162">Gramani</option>
+													    
+                                                        <option value="163">Gudia</option>
+													    
+                                                        <option value="164">Gujjar</option>
+													    
+                                                        <option value="165">Gupta</option>
+													    
+                                                        <option value="166">Guptan</option>
+													    
+                                                        <option value="167">Gurav</option>
+													    
+                                                        <option value="168">Gurjar</option>
+													    
+                                                        <option value="169">Halba Koshti</option>
+													    
+                                                        <option value="170">Helava</option>
+													    
+                                                        <option value="171">Hugar (Jeer)</option>
+													    
+                                                        <option value="172">Intercaste</option>
+													    
+                                                        <option value="173">Irani</option>
+													    
+                                                        <option value="174">Jaalari</option>
+													    
+                                                        <option value="175">Jaiswal</option>
+													    
+                                                        <option value="176">Jandra</option>
+													    
+                                                        <option value="177">Jangam</option>
+													    
+                                                        <option value="178">Jangra - Brahmin</option>
+													    
+                                                        <option value="179">Jat</option>
+													    
+                                                        <option value="180">Jatav</option>
+													    
+                                                        <option value="181">Jetty/Malla</option>
+													    
+                                                        <option value="182">Jijhotia Brahmin</option>
+													    
+                                                        <option value="183">Jogi (Nath)</option>
+													    
+                                                        <option value="184">Kachara</option>
+													    
+                                                        <option value="185">Kadava Patel</option>
+													    
+                                                        <option value="186">Kahar</option>
+													    
+                                                        <option value="187">Kaibarta</option>
+													    
+                                                        <option value="188">Kalal</option>
+													    
+                                                        <option value="189">Kalanji</option>
+													    
+                                                        <option value="190">Kalar</option>
+													    
+                                                        <option value="191">Kalinga</option>
+													    
+                                                        <option value="192">Kalinga Vysya</option>
+													    
+                                                        <option value="193">Kalita</option>
+													    
+                                                        <option value="194">Kalwar</option>
+													    
+                                                        <option value="195">Kamboj</option>
+													    
+                                                        <option value="196">Kamma</option>
+													    
+                                                        <option value="197">Kansari</option>
+													    
+                                                        <option value="198">Kapu</option>
+													    
+                                                        <option value="199">Karana</option>
+													    
+                                                        <option value="200">Karmakar</option>
+													    
+                                                        <option value="201">Karuneegar</option>
+													    
+                                                        <option value="202">Kasar</option>
+													    
+                                                        <option value="203">Kashyap</option>
+													    
+                                                        <option value="204">Katiya</option>
+													    
+                                                        <option value="205">Kavuthiyya/Ezhavathy</option>
+													    
+                                                        <option value="206">Kayastha</option>
+													    
+                                                        <option value="207">Khandayat</option>
+													    
+                                                        <option value="208">Khandelwal</option>
+													    
+                                                        <option value="209">Kharwa</option>
+													    
+                                                        <option value="210">Kharwar</option>
+													    
+                                                        <option value="211">Khatri</option>
+													    
+                                                        <option value="212">Kirar</option>
+													    
+                                                        <option value="213">Kokanastha Maratha</option>
+													    
+                                                        <option value="214">Koli</option>
+													    
+                                                        <option value="215">Koli Mahadev</option>
+													    
+                                                        <option value="216">Koli Patel</option>
+													    
+                                                        <option value="217">Kongu Vellala Gounder</option>
+													    
+                                                        <option value="218">Korama</option>
+													    
+                                                        <option value="219">Kori</option>
+													    
+                                                        <option value="220">Kosthi</option>
+													    
+                                                        <option value="221">Krishnavaka</option>
+													    
+                                                        <option value="222">Kshatriya</option>
+													    
+                                                        <option value="223">Kudumbi</option>
+													    
+                                                        <option value="224">Kulal</option>
+													    
+                                                        <option value="225">Kulalar</option>
+													    
+                                                        <option value="226">Kulita</option>
+													    
+                                                        <option value="227">Kumawat</option>
+													    
+                                                        <option value="228">Kumbhakar</option>
+													    
+                                                        <option value="229">Kumbhar</option>
+													    
+                                                        <option value="230">Kumhar</option>
+													    
+                                                        <option value="231">Kummari</option>
+													    
+                                                        <option value="232">Kunbi</option>
+													    
+                                                        <option value="233">Kuravan</option>
+													    
+                                                        <option value="234">Kurmi/Kurmi Kshatriya</option>
+													    
+                                                        <option value="235">Kuruba</option>
+													    
+                                                        <option value="236">Kuruhina Shetty</option>
+													    
+                                                        <option value="237">Kurumbar</option>
+													    
+                                                        <option value="238">Kushwaha (Koiri)</option>
+													    
+                                                        <option value="239">Lambadi</option>
+													    
+                                                        <option value="240">Leva patel</option>
+													    
+                                                        <option value="241">Leva patil</option>
+													    
+                                                        <option value="242">Lingayath</option>
+													    
+                                                        <option value="243">Lodhi Rajput</option>
+													    
+                                                        <option value="244">Lohana</option>
+													    
+                                                        <option value="245">Lohar</option>
+													    
+                                                        <option value="246">Loniya</option>
+													    
+                                                        <option value="247">Lubana</option>
+													    
+                                                        <option value="248">Madiga</option>
+													    
+                                                        <option value="249">Mahajan</option>
+													    
+                                                        <option value="250">Mahar</option>
+													    
+                                                        <option value="251">Mahendra</option>
+													    
+                                                        <option value="252">Maheshwari</option>
+													    
+                                                        <option value="253">Mahishya</option>
+													    
+                                                        <option value="254">Majabi</option>
+													    
+                                                        <option value="255">Mala</option>
+													    
+                                                        <option value="256">Mali</option>
+													    
+                                                        <option value="257">Mallah</option>
+													    
+                                                        <option value="258">Malviya Brahmin</option>
+													    
+                                                        <option value="259">Mangalorean</option>
+													    
+                                                        <option value="260">Mapila</option>
+													    
+                                                        <option value="261">Maratha</option>
+													    
+                                                        <option value="262">Maruthuvar</option>
+													    
+                                                        <option value="263">Matang</option>
+													    
+                                                        <option value="264">Mathur</option>
+													    
+                                                        <option value="265">Maurya / Shakya</option>
+													    
+                                                        <option value="266">Meena</option>
+													    
+                                                        <option value="267">Meenavar</option>
+													    
+                                                        <option value="268">Mehra</option>
+													    
+                                                        <option value="269">Meru Darji</option>
+													    
+                                                        <option value="270">Mochi</option>
+													    
+                                                        <option value="271">Modak</option>
+													    
+                                                        <option value="272">Mogaveera</option>
+													    
+                                                        <option value="273">Mudaliyar</option>
+													    
+                                                        <option value="274">Mudiraj</option>
+													    
+                                                        <option value="275">Munnuru Kapu</option>
+													    
+                                                        <option value="277">Muthuraja</option>
+													    
+                                                        <option value="278">Naagavamsam</option>
+													    
+                                                        <option value="279">Nadar</option>
+													    
+                                                        <option value="280">Nagaralu</option>
+													    
+                                                        <option value="281">Nai</option>
+													    
+                                                        <option value="282">Naicker</option>
+													    
+                                                        <option value="283">Naidu</option>
+													    
+                                                        <option value="284">Naik</option>
+													    
+                                                        <option value="285">Nair</option>
+													    
+                                                        <option value="286">Namasudra / Namassej</option>
+													    
+                                                        <option value="287">Nambiar</option>
+													    
+                                                        <option value="288">Napit</option>
+													    
+                                                        <option value="289">Nayaka</option>
+													    
+                                                        <option value="290">Neeli</option>
+													    
+                                                        <option value="291">Nhavi</option>
+													    
+                                                        <option value="292">Oswal</option>
+													    
+                                                        <option value="293">Otari</option>
+													    
+                                                        <option value="294">Padmasali</option>
+													    
+                                                        <option value="295">Pal</option>
+													    
+                                                        <option value="296">Panchal</option>
+													    
+                                                        <option value="297">Pandaram</option>
+													    
+                                                        <option value="298">Panicker</option>
+													    
+                                                        <option value="299">Parkava Kulam</option>
+													    
+                                                        <option value="300">Parsi</option>
+													    
+                                                        <option value="301">Partraj</option>
+													    
+                                                        <option value="302">Pasi</option>
+													    
+                                                        <option value="303">Patel</option>
+													    
+                                                        <option value="304">Pathare Prabhu</option>
+													    
+                                                        <option value="305">Patnaick/Sistakaranam</option>
+													    
+                                                        <option value="306">Patra</option>
+													    
+                                                        <option value="307">Perika</option>
+													    
+                                                        <option value="308">Pillai</option>
+													    
+                                                        <option value="309">Poosala</option>
+													    
+                                                        <option value="310">Porwal</option>
+													    
+                                                        <option value="311">Prajapati</option>
+													    
+                                                        <option value="312">Raigar</option>
+													    
+                                                        <option value="313">Rajaka</option>
+													    
+                                                        <option value="314">Rajastani</option>
+													    
+                                                        <option value="315">Rajbhar</option>
+													    
+                                                        <option value="316">Rajbonshi</option>
+													    
+                                                        <option value="317">Rajpurohit</option>
+													    
+                                                        <option value="318">Rajput</option>
+													    
+                                                        <option value="319">Ramanandi</option>
+													    
+                                                        <option value="320">Ramdasia</option>
+													    
+                                                        <option value="321">Ramgariah</option>
+													    
+                                                        <option value="322">Ramoshi</option>
+													    
+                                                        <option value="323">Ravidasia</option>
+													    
+                                                        <option value="324">Rawat</option>
+													    
+                                                        <option value="325">Reddy</option>
+													    
+                                                        <option value="326">Relli</option>
+													    
+                                                        <option value="327">Ror</option>
+													    
+                                                        <option value="328">Sadgope</option>
+													    
+                                                        <option value="329">Sagara (Uppara)</option>
+													    
+                                                        <option value="330">Saha</option>
+													    
+                                                        <option value="331">Sahu</option>
+													    
+                                                        <option value="332">Saini</option>
+													    
+                                                        <option value="333">Saliya</option>
+													    
+                                                        <option value="334">Sathwara</option>
+													    
+                                                        <option value="335">Savji</option>
+													    
+                                                        <option value="336">SC</option>
+													    
+                                                        <option value="337">Senai Thalaivar</option>
+													    
+                                                        <option value="338">Senguntha Mudaliyar</option>
+													    
+                                                        <option value="339">Settibalija</option>
+													    
+                                                        <option value="340">Shimpi/Namdev</option>
+													    
+                                                        <option value="341">Sindhi-Amil</option>
+													    
+                                                        <option value="342">Sindhi-Baibhand</option>
+													    
+                                                        <option value="343">Sindhi-Bhanusali</option>
+													    
+                                                        <option value="344">Sindhi-Bhatia</option>
+													    
+                                                        <option value="345">Sindhi-Chhapru</option>
+													    
+                                                        <option value="346">Sindhi-Dadu</option>
+													    
+                                                        <option value="347">Sindhi-Hyderabadi</option>
+													    
+                                                        <option value="348">Sindhi-Larai</option>
+													    
+                                                        <option value="349">Sindhi-Larkana</option>
+													    
+                                                        <option value="350">Sindhi-Lohana</option>
+													    
+                                                        <option value="351">Sindhi-Rohiri</option>
+													    
+                                                        <option value="352">Sindhi-Sahiti</option>
+													    
+                                                        <option value="353">Sindhi-Sakkhar</option>
+													    
+                                                        <option value="354">Sindhi-Sehwani</option>
+													    
+                                                        <option value="355">Sindhi-Shikarpuri</option>
+													    
+                                                        <option value="356">Sindhi-Thatai</option>
+													    
+                                                        <option value="357">SKP</option>
+													    
+                                                        <option value="358">Sonar</option>
+													    
+                                                        <option value="359">Soni</option>
+													    
+                                                        <option value="360">Sozhiya Vellalar</option>
+													    
+                                                        <option value="361">Srisayana</option>
+													    
+                                                        <option value="362">ST</option>
+													    
+                                                        <option value="363">ENGLISH</option>
+													    
+                                                        <option value="364">Sunari</option>
+													    
+                                                        <option value="365">Sundhi</option>
+													    
+                                                        <option value="366">Surya Balija</option>
+													    
+                                                        <option value="367">Suthar</option>
+													    
+                                                        <option value="368">Swakula Sali</option>
+													    
+                                                        <option value="369">Tamboli</option>
+													    
+                                                        <option value="370">Tanti</option>
+													    
+                                                        <option value="371">Tantubai</option>
+													    
+                                                        <option value="372">Telaga</option>
+													    
+                                                        <option value="373">Teli</option>
+													    
+                                                        <option value="374">Thakkar</option>
+													    
+                                                        <option value="375">Thakore</option>
+													    
+                                                        <option value="376">Thakur</option>
+													    
+                                                        <option value="377">Thigala</option>
+													    
+                                                        <option value="378">Thiyya</option>
+													    
+                                                        <option value="379">Tili</option>
+													    
+                                                        <option value="380">Togata</option>
+													    
+                                                        <option value="381">Tonk Kshatriya</option>
+													    
+                                                        <option value="382">Turupu Kapu</option>
+													    
+                                                        <option value="383">Urali Gounder</option>
+													    
+                                                        <option value="384">Urs</option>
+													    
+                                                        <option value="385">Vada Balija</option>
+													    
+                                                        <option value="386">Vaddera</option>
+													    
+                                                        <option value="387">Vaish</option>
+													    
+                                                        <option value="388">Vaishnav</option>
+													    
+                                                        <option value="389">Vaishnava</option>
+													    
+                                                        <option value="390">Vaishya</option>
+													    
+                                                        <option value="391">Vaishya Vani</option>
+													    
+                                                        <option value="392">Valluvan</option>
+													    
+                                                        <option value="393">Valmiki</option>
+													    
+                                                        <option value="394">Vania</option>
+													    
+                                                        <option value="395">Vanika Vyshya</option>
+													    
+                                                        <option value="396">Vaniya</option>
+													    
+                                                        <option value="397">Vanjara</option>
+													    
+                                                        <option value="398">Vanjari</option>
+													    
+                                                        <option value="399">Vankar</option>
+													    
+                                                        <option value="400">Vannar</option>
+													    
+                                                        <option value="401">Vannia Kula Kshatriyar</option>
+													    
+                                                        <option value="402">Variar</option>
+													    
+                                                        <option value="403">Varshney</option>
+													    
+                                                        <option value="404">Veera Saivam</option>
+													    
+                                                        <option value="405">Velaan</option>
+													    
+                                                        <option value="406">Velama</option>
+													    
+                                                        <option value="407">Vellalar</option>
+													    
+                                                        <option value="408">Veluthedathu Nair</option>
+													    
+                                                        <option value="409">Vettuva Gounder</option>
+													    
+                                                        <option value="410">Vilakkithala Nair</option>
+													    
+                                                        <option value="411">Vishwakarma</option>
+													    
+                                                        <option value="412">Viswabrahmin</option>
+													    
+                                                        <option value="413">Vokkaliga</option>
+													    
+                                                        <option value="414">Vysya</option>
+													    
+                                                        <option value="415">Yadav</option>
+													    
+                                                        <option value="416">Yellapu</option>
+													    
+                                                        <option value="417">Brahmin - Embrandiri</option>
+													    
+                                                        <option value="418">Ansari</option>
+													    
+                                                        <option value="419">Arain</option>
+													    
+                                                        <option value="420">Awan</option>
+													    
+                                                        <option value="421">Bohra</option>
+													    
+                                                        <option value="422">Dekkani</option>
+													    
+                                                        <option value="423">Dudekula</option>
+													    
+                                                        <option value="424">Hanafi</option>
+													    
+                                                        <option value="425">Jat</option>
+													    
+                                                        <option value="426">Khoja</option>
+													    
+                                                        <option value="427">Lebbai</option>
+													    
+                                                        <option value="428">Malik</option>
+													    
+                                                        <option value="429">Mapila</option>
+													    
+                                                        <option value="430">Maraicar</option>
+													    
+                                                        <option value="431">Memon</option>
+													    
+                                                        <option value="432">Mughal</option>
+													    
+                                                        <option value="433">Others</option>
+													    
+                                                        <option value="434">Pathan</option>
+													    
+                                                        <option value="435">Qureshi</option>
+													    
+                                                        <option value="436">Rajput</option>
+													    
+                                                        <option value="437">Rowther</option>
+													    
+                                                        <option value="438">Shafi</option>
+													    
+                                                        <option value="439">Sheikh</option>
+													    
+                                                        <option value="440">Siddiqui</option>
+													    
+                                                        <option value="441">Syed</option>
+													    
+                                                        <option value="442">UnSpecified</option>
+													    
+                                                        <option value="443">Born Again</option>
+													    
+                                                        <option value="444">Bretheren</option>
+													    
+                                                        <option value="445">Church of South India</option>
+													    
+                                                        <option value="446">Evangelist</option>
+													    
+                                                        <option value="447">Jacobite</option>
+													    
+                                                        <option value="448">Knanaya</option>
+													    
+                                                        <option value="449">Knanaya Catholic</option>
+													    
+                                                        <option value="450">Knanaya Jacobite</option>
+													    
+                                                        <option value="451">Latin Catholic</option>
+													    
+                                                        <option value="452">Malankara</option>
+													    
+                                                        <option value="453">Marthoma</option>
+													    
+                                                        <option value="454">Others</option>
+													    
+                                                        <option value="455">Pentecost</option>
+													    
+                                                        <option value="456">Roman Catholic</option>
+													    
+                                                        <option value="457">Seventh-day Adventist</option>
+													    
+                                                        <option value="458">Syrian Catholic</option>
+													    
+                                                        <option value="459">Syrian Jacobite</option>
+													    
+                                                        <option value="460">Syrian Orthodox</option>
+													    
+                                                        <option value="461">Syro Malabar</option>
+													    
+                                                        <option value="463">Ahluwalia</option>
+													    
+                                                        <option value="464">Arora</option>
+													    
+                                                        <option value="465">Bhatia</option>
+													    
+                                                        <option value="466">Bhatra</option>
+													    
+                                                        <option value="467">Ghumar</option>
+													    
+                                                        <option value="468">Intercaste</option>
+													    
+                                                        <option value="469">Jat</option>
+													    
+                                                        <option value="470">Kamboj</option>
+													    
+                                                        <option value="471">Khatri</option>
+													    
+                                                        <option value="472">Kshatriya</option>
+													    
+                                                        <option value="473">Lubana</option>
+													    
+                                                        <option value="474">Majabi</option>
+													    
+                                                        <option value="475">Nai</option>
+													    
+                                                        <option value="476">Others</option>
+													    
+                                                        <option value="477">Rajput</option>
+													    
+                                                        <option value="478">Ramdasia</option>
+													    
+                                                        <option value="479">Ramgharia</option>
+													    
+                                                        <option value="480">Ravidasia</option>
+													    
+                                                        <option value="481">Saini</option>
+													    
+                                                        <option value="482">Tonk Kshatriya</option>
+													    
+                                                        <option value="484">Agarwal</option>
+													    
+                                                        <option value="485">Bania</option>
+													    
+                                                        <option value="486">Intercaste</option>
+													    
+                                                        <option value="487">Jaiswal</option>
+													    
+                                                        <option value="488">KVO</option>
+													    
+                                                        <option value="489">Khandelwal</option>
+													    
+                                                        <option value="490">Kutchi</option>
+													    
+                                                        <option value="491">Oswal</option>
+													    
+                                                        <option value="492">Others</option>
+													    
+                                                        <option value="493">Porwal</option>
+													    
+                                                        <option value="495">Vaishya</option>
+													    
+                                                        <option value="496">Intercaste</option>
+													    
+                                                        <option value="497">Irani</option>
+													    
+                                                        <option value="498">Parsi</option>
+													    
+                                                        <option value="499">Don&#39;t wish to specify</option>
+													    
+                                                        <option value="500">Konkani</option>
+												</select>
+										
+									</div>
+
+					<div class="row" style="margin-left: 0px;">
+
+						<label for="countryId" class="hidden-lable">Country Code</label> <select class="form-control no-input_field" id="countryId" name="countryId">
+							<option value="" class="hide"></option>
+							<option data-countryId="499" selected="selected" value="499">+91, India</option>
+							<option data-countryId="500" value="500">+93, Afghanistan</option>
+							<option data-countryId="501" value="501">+355, Albania</option>
+							<option data-countryId="502" value="502">+213, Algeria</option>
+							<option data-countryId="503" value="503">+1-684, American Samoa</option>
+							<option data-countryId="504" value="504">+376, Andorra</option>
+							<option data-countryId="505" value="505">+244, Angola</option>
+							<option data-countryId="506" value="506">+1-264, Anguilla</option>
+							<option data-countryId="507" value="507">+672, Antarctica</option>
+							<option data-countryId="508" value="508">+1-268, Antigua And Barbuda</option>
+							<option data-countryId="509" value="509">+54, Argentina</option>
+							<option data-countryId="510" value="510">+374, Armenia</option>
+							<option data-countryId="511" value="511">+297, Aruba</option>
+							<option data-countryId="512" value="512">+61, Australia</option>
+							<option data-countryId="513" value="513">+43, Austria</option>
+							<option data-countryId="514" value="514">+994, Azerbaijan</option>
+							<option data-countryId="515" value="515">+1-242, Bahamas</option>
+							<option data-countryId="516" value="516">+973, Bahrain</option>
+							<option data-countryId="517" value="517">+880, Bangladesh</option>
+							<option data-countryId="518" value="518">+1-246, Barbados</option>
+							<option data-countryId="519" value="519">+375, Belarus</option>
+							<option data-countryId="520" value="520">+32, Belgium</option>
+							<option data-countryId="521" value="521">+501, Belize</option>
+							<option data-countryId="522" value="522">+229, Benin</option>
+							<option data-countryId="523" value="523">+1-441, Bermuda</option>
+							<option data-countryId="524" value="524">+975, Bhutan</option>
+							<option data-countryId="525" value="525">+591, Bolivia</option>
+							<option data-countryId="526" value="526">+387, Bosnia And Herzegovina</option>
+							<option data-countryId="527" value="527">+267, Botswana</option>
+							<option data-countryId="528" value="528">+47, Bouvet Island</option>
+							<option data-countryId="529" value="529">+55, Brazil</option>
+							<option data-countryId="530" value="530">+246, British Indian Ocean Territory</option>
+							<option data-countryId="531" value="531">+1-284, British Virgin Islands</option>
+							<option data-countryId="532" value="532">+673, Brunei</option>
+							<option data-countryId="533" value="533">+673, Brunei Darussalam</option>
+							<option data-countryId="534" value="534">+359, Bulgaria</option>
+							<option data-countryId="535" value="535">+226, Burkina Faso</option>
+							<option data-countryId="536" value="536">+257, Burundi</option>
+							<option data-countryId="537" value="537">+855, Cambodia</option>
+							<option data-countryId="538" value="538">+237, Cameroon</option>
+							<option data-countryId="539" value="539">+1, Canada</option>
+							<option data-countryId="540" value="540">+238, Cape Verde</option>
+							<option data-countryId="541" value="541">+1-345, Cayman Islands</option>
+							<option data-countryId="542" value="542">+236, Central African Republic</option>
+							<option data-countryId="543" value="543">+235, Chad</option>
+							<option data-countryId="544" value="544">+56, Chile</option>
+							<option data-countryId="545" value="545">+86, China</option>
+							<option data-countryId="546" value="546">+61, Christmas Island</option>
+							<option data-countryId="547" value="547">+891, Cocos (Keeling) Islands</option>
+							<option data-countryId="548" value="548">+61, Cocos Islands</option>
+							<option data-countryId="549" value="549">+57, Colombia</option>
+							<option data-countryId="550" value="550">+269, Comoros</option>
+							<option data-countryId="551" value="551">+243, Congo</option>
+							<option data-countryId="552" value="552">+243, Congo The Democratic Republic Of The</option>
+							<option data-countryId="553" value="553">+682, Cook Islands</option>
+							<option data-countryId="554" value="554">+506, Costa Rica</option>
+							<option data-countryId="555" value="555">+225, Cote D&#39;Ivoire</option>
+							<option data-countryId="556" value="556">+385, Croatia</option>
+							<option data-countryId="557" value="557">+53, Cuba</option>
+							<option data-countryId="558" value="558">+599, Curacao</option>
+							<option data-countryId="559" value="559">+357, Cyprus</option>
+							<option data-countryId="560" value="560">+420, Czech Republic</option>
+							<option data-countryId="561" value="561">+243, Democratic Republic of the Congo</option>
+							<option data-countryId="562" value="562">+45, Denmark</option>
+							<option data-countryId="563" value="563">+253, Djibouti</option>
+							<option data-countryId="564" value="564">+1-767, Dominica</option>
+							<option data-countryId="565" value="565">+1-809, 1-829, 1-849, Dominican Republic</option>
+							<option data-countryId="566" value="566">+670, East Timor</option>
+							<option data-countryId="567" value="567">+593, Ecuador</option>
+							<option data-countryId="568" value="568">+20, Egypt</option>
+							<option data-countryId="569" value="569">+503, El Salvador</option>
+							<option data-countryId="570" value="570">+240, Equatorial Guinea</option>
+							<option data-countryId="571" value="571">+291, Eritrea</option>
+							<option data-countryId="572" value="572">+372, Estonia</option>
+							<option data-countryId="573" value="573">+251, Ethiopia</option>
+							<option data-countryId="574" value="574">+500, Falkland Islands</option>
+							<option data-countryId="575" value="575">+500, Falkland Islands (Malvinas)</option>
+							<option data-countryId="576" value="576">+298, Faroe Islands</option>
+							<option data-countryId="577" value="577">+679, Fiji</option>
+							<option data-countryId="578" value="578">+358, Finland</option>
+							<option data-countryId="579" value="579">+33, France</option>
+							<option data-countryId="580" value="580">+594, French Guiana</option>
+							<option data-countryId="581" value="581">+689, French Polynesia</option>
+							<option data-countryId="582" value="582">+262, French Southern Territories</option>
+							<option data-countryId="583" value="583">+241, Gabon</option>
+							<option data-countryId="584" value="584">+220, Gambia</option>
+							<option data-countryId="585" value="585">+995, Georgia</option>
+							<option data-countryId="586" value="586">+49, Germany</option>
+							<option data-countryId="587" value="587">+233, Ghana</option>
+							<option data-countryId="588" value="588">+350, Gibraltar</option>
+							<option data-countryId="589" value="589">+30, Greece</option>
+							<option data-countryId="590" value="590">+299, Greenland</option>
+							<option data-countryId="591" value="591">+1-473, Grenada</option>
+							<option data-countryId="592" value="592">+590, Guadeloupe</option>
+							<option data-countryId="593" value="593">+1-671, Guam</option>
+							<option data-countryId="594" value="594">+502, Guatemala</option>
+							<option data-countryId="595" value="595">+44-1481, Guernsey</option>
+							<option data-countryId="596" value="596">+224, Guinea</option>
+							<option data-countryId="597" value="597">+245, Guinea-Bissau</option>
+							<option data-countryId="598" value="598">+592, Guyana</option>
+							<option data-countryId="599" value="599">+509, Haiti</option>
+							<option data-countryId="600" value="600">+334, Heard Island And Mcdonald Islands</option>
+							<option data-countryId="601" value="601">+379, Holy See (Vatican City State)</option>
+							<option data-countryId="602" value="602">+504, Honduras</option>
+							<option data-countryId="603" value="603">+852, Hong Kong</option>
+							<option data-countryId="604" value="604">+36, Hungary</option>
+							<option data-countryId="605" value="605">+354, Iceland</option>
+							<option data-countryId="607" value="607">+62, Indonesia</option>
+							<option data-countryId="608" value="608">+98, Iran</option>
+							<option data-countryId="609" value="609">+98, Iran Islamic Republic Of</option>
+							<option data-countryId="610" value="610">+964, Iraq</option>
+							<option data-countryId="611" value="611">+353, Ireland</option>
+							<option data-countryId="612" value="612">+44-1624, Isle of Man</option>
+							<option data-countryId="613" value="613">+972, Israel</option>
+							<option data-countryId="614" value="614">+39, Italy</option>
+							<option data-countryId="615" value="615">+225, Ivory Coast</option>
+							<option data-countryId="616" value="616">+1-876, Jamaica</option>
+							<option data-countryId="617" value="617">+81, Japan</option>
+							<option data-countryId="618" value="618">+44-1534, Jersey</option>
+							<option data-countryId="619" value="619">+962, Jordan</option>
+							<option data-countryId="620" value="620">+7, Kazakhstan</option>
+							<option data-countryId="621" value="621">+254, Kenya</option>
+							<option data-countryId="622" value="622">+686, Kiribati</option>
+							<option data-countryId="623" value="623">+82, Korea Democratic People&#39;s Republic Of</option>
+							<option data-countryId="624" value="624">+82, Korea Republic Of</option>
+							<option data-countryId="625" value="625">+383, Kosovo</option>
+							<option data-countryId="626" value="626">+965, Kuwait</option>
+							<option data-countryId="627" value="627">+996, Kyrgyzstan</option>
+							<option data-countryId="628" value="628">+856, Lao People&#39;s Democratic Republic</option>
+							<option data-countryId="629" value="629">+856, Laos</option>
+							<option data-countryId="630" value="630">+371, Latvia</option>
+							<option data-countryId="631" value="631">+961, Lebanon</option>
+							<option data-countryId="632" value="632">+266, Lesotho</option>
+							<option data-countryId="633" value="633">+231, Liberia</option>
+							<option data-countryId="634" value="634">+218, Libya</option>
+							<option data-countryId="635" value="635">+218, Libyan Arab Jamahiriya</option>
+							<option data-countryId="636" value="636">+423, Liechtenstein</option>
+							<option data-countryId="637" value="637">+370, Lithuania</option>
+							<option data-countryId="638" value="638">+352, Luxembourg</option>
+							<option data-countryId="639" value="639">+853, Macao</option>
+							<option data-countryId="640" value="640">+389, Macedonia</option>
+							<option data-countryId="641" value="641">+261, Madagascar</option>
+							<option data-countryId="642" value="642">+265, Malawi</option>
+							<option data-countryId="643" value="643">+60, Malaysia</option>
+							<option data-countryId="644" value="644">+960, Maldives</option>
+							<option data-countryId="645" value="645">+223, Mali</option>
+							<option data-countryId="646" value="646">+356, Malta</option>
+							<option data-countryId="647" value="647">+692, Marshall Islands</option>
+							<option data-countryId="648" value="648">+596, Martinique</option>
+							<option data-countryId="649" value="649">+222, Mauritania</option>
+							<option data-countryId="650" value="650">+230, Mauritius</option>
+							<option data-countryId="651" value="651">+262, Mayotte</option>
+							<option data-countryId="652" value="652">+52, Mexico</option>
+							<option data-countryId="653" value="653">+691, Micronesia</option>
+							<option data-countryId="654" value="654">+691, Micronesia Federated States Of</option>
+							<option data-countryId="655" value="655">+373, Moldova</option>
+							<option data-countryId="656" value="656">+377, Monaco</option>
+							<option data-countryId="657" value="657">+976, Mongolia</option>
+							<option data-countryId="658" value="658">+382, Montenegro</option>
+							<option data-countryId="659" value="659">+1-664, Montserrat</option>
+							<option data-countryId="660" value="660">+212, Morocco</option>
+							<option data-countryId="661" value="661">+258, Mozambique</option>
+							<option data-countryId="662" value="662">+95, Myanmar</option>
+							<option data-countryId="663" value="663">+264, Namibia</option>
+							<option data-countryId="664" value="664">+674, Nauru</option>
+							<option data-countryId="665" value="665">+977, Nepal</option>
+							<option data-countryId="666" value="666">+31, Netherlands</option>
+							<option data-countryId="667" value="667">+599, Netherlands Antilles</option>
+							<option data-countryId="668" value="668">+687, New Caledonia</option>
+							<option data-countryId="669" value="669">+64, New Zealand</option>
+							<option data-countryId="670" value="670">+505, Nicaragua</option>
+							<option data-countryId="671" value="671">+227, Niger</option>
+							<option data-countryId="672" value="672">+234, Nigeria</option>
+							<option data-countryId="673" value="673">+683, Niue</option>
+							<option data-countryId="674" value="674">+672, Norfolk Island</option>
+							<option data-countryId="675" value="675">+850, North Korea</option>
+							<option data-countryId="676" value="676">+1-670, Northern Mariana Islands</option>
+							<option data-countryId="677" value="677">+47, Norway</option>
+							<option data-countryId="678" value="678">+968, Oman</option>
+							<option data-countryId="679" value="679">+92, Pakistan</option>
+							<option data-countryId="680" value="680">+680, Palau</option>
+							<option data-countryId="681" value="681">+970, Palestine</option>
+							<option data-countryId="682" value="682">+275, Palestinian Territory Occupied</option>
+							<option data-countryId="683" value="683">+507, Panama</option>
+							<option data-countryId="684" value="684">+675, Papua New Guinea</option>
+							<option data-countryId="685" value="685">+595, Paraguay</option>
+							<option data-countryId="686" value="686">+51, Peru</option>
+							<option data-countryId="687" value="687">+63, Philippines</option>
+							<option data-countryId="688" value="688">+64, Pitcairn</option>
+							<option data-countryId="689" value="689">+48, Poland</option>
+							<option data-countryId="690" value="690">+351, Portugal</option>
+							<option data-countryId="691" value="691">+1-787, 1-939, Puerto Rico</option>
+							<option data-countryId="692" value="692">+974, Qatar</option>
+							<option data-countryId="693" value="693">+242, Republic of the Congo</option>
+							<option data-countryId="694" value="694">+262, Reunion</option>
+							<option data-countryId="695" value="695">+262, Réunion</option>
+							<option data-countryId="696" value="696">+40, Romania</option>
+							<option data-countryId="697" value="697">+7, Russia</option>
+							<option data-countryId="698" value="698">+7, Russian Federation</option>
+							<option data-countryId="699" value="699">+250, Rwanda</option>
+							<option data-countryId="700" value="700">+590, Saint Barthelemy</option>
+							<option data-countryId="701" value="701">+290, Saint Helena</option>
+							<option data-countryId="702" value="702">+1-869, Saint Kitts And Nevis</option>
+							<option data-countryId="703" value="703">+1-758, Saint Lucia</option>
+							<option data-countryId="704" value="704">+590, Saint Martin</option>
+							<option data-countryId="705" value="705">+508, Saint Pierre And Miquelon</option>
+							<option data-countryId="706" value="706">+1-784, Saint Vincent And The Grenadines</option>
+							<option data-countryId="707" value="707">+685, Samoa</option>
+							<option data-countryId="708" value="708">+378, San Marino</option>
+							<option data-countryId="709" value="709">+239, Sao Tome And Principe</option>
+							<option data-countryId="710" value="710">+966, Saudi Arabia</option>
+							<option data-countryId="711" value="711">+221, Senegal</option>
+							<option data-countryId="712" value="712">+381, Serbia</option>
+							<option data-countryId="713" value="713">+248, Seychelles</option>
+							<option data-countryId="714" value="714">+232, Sierra Leone</option>
+							<option data-countryId="715" value="715">+65, Singapore</option>
+							<option data-countryId="716" value="716">+1-721, Sint Maarten</option>
+							<option data-countryId="717" value="717">+421, Slovakia</option>
+							<option data-countryId="718" value="718">+386, Slovenia</option>
+							<option data-countryId="719" value="719">+677, Solomon Islands</option>
+							<option data-countryId="720" value="720">+252, Somalia</option>
+							<option data-countryId="721" value="721">+27, South Africa</option>
+							<option data-countryId="722" value="722">+500, South Georgia And The South Sandwich Islands</option>
+							<option data-countryId="723" value="723">+82, South Korea</option>
+							<option data-countryId="724" value="724">+211, South Sudan</option>
+							<option data-countryId="725" value="725">+34, Spain</option>
+							<option data-countryId="726" value="726">+94, Sri Lanka</option>
+							<option data-countryId="727" value="727">+249, Sudan</option>
+							<option data-countryId="728" value="728">+597, Suriname</option>
+							<option data-countryId="729" value="729">+47, Svalbard And Jan Mayen</option>
+							<option data-countryId="730" value="730">+268, Swaziland</option>
+							<option data-countryId="731" value="731">+46, Sweden</option>
+							<option data-countryId="732" value="732">+41, Switzerland</option>
+							<option data-countryId="733" value="733">+963, Syria</option>
+							<option data-countryId="734" value="734">+963, Syrian Arab Republic</option>
+							<option data-countryId="735" value="735">+886, Taiwan</option>
+							<option data-countryId="736" value="736">+992, Tajikistan</option>
+							<option data-countryId="737" value="737">+255, Tanzania</option>
+							<option data-countryId="738" value="738">+255, Tanzania United Republic Of</option>
+							<option data-countryId="739" value="739">+66, Thailand</option>
+							<option data-countryId="740" value="740">+670, Timor-Leste</option>
+							<option data-countryId="741" value="741">+228, Togo</option>
+							<option data-countryId="742" value="742">+690, Tokelau</option>
+							<option data-countryId="743" value="743">+676, Tonga</option>
+							<option data-countryId="744" value="744">+1-868, Trinidad And Tobago</option>
+							<option data-countryId="745" value="745">+216, Tunisia</option>
+							<option data-countryId="746" value="746">+90, Turkey</option>
+							<option data-countryId="747" value="747">+993, Turkmenistan</option>
+							<option data-countryId="748" value="748">+1-649, Turks And Caicos Islands</option>
+							<option data-countryId="749" value="749">+688, Tuvalu</option>
+							<option data-countryId="750" value="750">+1-340, U.S. Virgin Islands</option>
+							<option data-countryId="751" value="751">+256, Uganda</option>
+							<option data-countryId="752" value="752">+380, Ukraine</option>
+							<option data-countryId="753" value="753">+971, United Arab Emirates</option>
+							<option data-countryId="754" value="754">+44, United Kingdom</option>
+							<option data-countryId="755" value="755">+1, United States</option>
+							<option data-countryId="756" value="756">+1, United States Minor Outlying Islands</option>
+							<option data-countryId="757" value="757">+598, Uruguay</option>
+							<option data-countryId="758" value="758">+998, Uzbekistan</option>
+							<option data-countryId="759" value="759">+678, Vanuatu</option>
+							<option data-countryId="760" value="760">+379, Vatican</option>
+							<option data-countryId="761" value="761">+58, Venezuela</option>
+							<option data-countryId="763" value="763">+84, Vietnam</option>
+							<option data-countryId="764" value="764">+1, Virgin Islands British</option>
+							<option data-countryId="765" value="765">+1, Virgin Islands U.S.</option>
+							<option data-countryId="766" value="766">+681, Wallis And Futuna</option>
+							<option data-countryId="767" value="767">+212, Western Sahara</option>
+							<option data-countryId="768" value="768">+967, Yemen</option>
+							<option data-countryId="769" value="769">+260, Zambia</option>
+							<option data-countryId="770" value="770">+263, Zimbabwe</option>
+							<option data-countryId="771" value="771">381, Yugoslavia</option>
+
+						</select>&nbsp; <input data-toggle="tooltip" data-placement="bottom" autocomplete="off" type="text" placeholder="Enter Your Phone Number" title="Enter Your Phone Number" class="form-control phone-input_field" id="mobileNumber" name="mobileNumber" maxlength="20" />
+
+
+					</div>
+
+					<div id="divemail">
+						<input type="email" data-placement="bottom" title="Enter a Valid Email ID" autocomplete="off" class="form-control" id="email" name="email" placeholder="Enter Your Email Address" />
+					</div>
+
+
+					<div id="divpass">
+						<input data-toggle="tooltip" data-placement="bottom" autocomplete="off" title="Password should contain 8 to 15 characters" type="password" placeholder="Enter Your Password" class="form-control" id="password" name="password" />
+					</div>
+
+					<div class="bttns-fnl">
+						<label><input type="checkbox" id="term" name="remember-me1" /> <span class="terms"><a>I Accept your Terms
+									and Conditions</a> </span></label>
+					</div>
+					<input type="text" id="registerfrom" name="registerfrom" hidden="true" />
+					<div>
+						<button type="button" class="btn lst-sbmt-bttn" id="submitbutton">SUBMIT</button>
+						
+						<button type="submit" id="submitbuttondummy" class="btn btn-block btn-lg btn-primary submit_btn" style="display: none;">Submit</button>
+					</div>
+				</form>
+
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+	<div class="modal fade" id="myForgotPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header" style="border-bottom: none;">
+					<button id="btnCloseForgotPass" type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="pop1">
+					<p style="font-size: 25px; padding-left: 15px; margin-bottom: 0em;">Having
+						trouble signing in?</p>
+					<div class="clearfix"></div>
+				</div>
+				<form id="forgetform" name="forgetform" >
+					<div style="padding: 30px;">
+
+						<div class="form-group">
+							<input type="text" title="Enter a Valid Email ID" placeholder="Enter Your Email Address" class="form-control spacer" id="forgetusername" name="username" />
+						</div>
+						<span id="forgetspan" class="error-span" hidden="true">Please
+							enter the registered e-mail ID</span> <span id="forgetdelete" class="error-span" hidden="true"> This Profile has been
+							deleted</span>
+						<div align="center" class="btn-toolbar">
+							<button type="button" data-toggle="modal" data-target="#CheckEmail" id="buttonhideforget" style="display: none;"></button>
+							<button type="button" class="btn-cust btn-4 btn-4a icon-arrow-right btnmrgn1" id="btncontinue">CONTINUE</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class="modal fade" id="CheckEmail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" id="btnCheckEmailClose" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="pop1">
+					<p style="font-size: 25px; padding-left: 20px;">Check your
+						e-mail</p>
+					<div class="clearfix"></div>
+				</div>
+				<div style="padding: 30px;">
+					<div>We have sent a link to the registered e-mail ID to reset
+						your password</div>
+					<br />
+					<div align="center" class="btn-toolbar">
+						<button type="button" data-dismiss="modal" aria-label="Close" class="btn-cust btn-4 btn-4a icon-arrow-right">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="modal fade" tabindex="-1" role="dialog" id="suspensionmodal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header modelHeadercustomize cust-modalheader">
+					<button type="button" class="close  cust-close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Your Profile is suspended due to the
+						following reason</h4>
+				</div>
+				<div class="modal-body">
+					<span class="sus-lbl" id="suspensionreasontd"></span>
+					<div class="clearfix "></div>
+				</div>
+				<div class="modal-footer cust-footer">
+					<p class="float-left">
+						Please contact our help desk <span><a >for more
+								details</a></span>
+					</p>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+
+	</div>
+	<div id="overlay" class="overlay-cust" style="display: none;">
+		<div id="spinner" class="spinner spinner-cust">
+
+			<div class="loginbackground">
+				<img id="img-spinner" src="../../src/assets/images/loader1.gif" class="lazy" alt="Loading" />
+			</div>
+
+		</div>
+	</div>
+
+	
+
+</body>
+
+
+
+	
